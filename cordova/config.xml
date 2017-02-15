@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+	xmlns:gap="http://phonegap.com/ns/1.0"
+	id="<%= id() %>"
+	version="<%= version %>"
+	viewmodes="fullscreen">
+		<access origin="*"/>
+		<author href="http://www.tresensa.com" email="support@tresensa.com">TreSensa</author>
+		<content src="index.html"/>
+		<name><%= name %></name>
+		<preference name="Orientation" value="<%= orientation %>" />
+		<preference name="com.smartmobilesoftware.inappbilling.public_key" value="<%= billing_key %>" />
+		<gap:config-file platform="ios" parent="UISupportedInterfaceOrientations" overwrite="true">
+			<array>
+				<%= orientationModes %>
+			</array>
+		</gap:config-file>
+		<gap:config-file platform="ios" parent="UIAppFonts" overwrite="true">
+			<array>
+				<%= customFonts() %>
+			</array>
+		</gap:config-file>
+		<gap:config-file platform="ios" parent="UIStatusBarHidden" overwrite="true">
+			<true/>
+		</gap:config-file>
+		<gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
+			<false/>
+		</gap:config-file>
+</widget>

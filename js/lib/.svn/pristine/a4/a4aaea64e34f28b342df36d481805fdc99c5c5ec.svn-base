@@ -1,0 +1,11 @@
+{
+  "name": "tgl",
+  "version": "1.0.33",
+  "authors": [
+    "Tresensa Inc."
+  ],
+  "description": "Tresensa Game Loader",
+  "main": "tgl-1.0.33.min.js",
+  "homepage": "http://tresensa.com",
+  "ignore": []
+}
